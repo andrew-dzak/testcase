@@ -1,0 +1,17 @@
+bin
+out/
+build
+repos
+.classpath
+.project
+.settings
+.gradle
+*.log
+!gradle/wrapper/gradle-wrapper.jar
+.idea
+*.iml
+gradlew
+gradlew.bat
+catalina.base_IS_UNDEFINED/
+.sts4-cache/
+

@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'testcasse'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+project.ext.hibernateVersion = '1.0.0.CR9'
+project.ext.vertxVersion = '4.1.2'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.hibernate.reactive', name: 'hibernate-reactive-core', version: hibernateVersion
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.20'
+    implementation group: 'io.vertx', name: 'vertx-pg-client', version: vertxVersion
+
+
+}
